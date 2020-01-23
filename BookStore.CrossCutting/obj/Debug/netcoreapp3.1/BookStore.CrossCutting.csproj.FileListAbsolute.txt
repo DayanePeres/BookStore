@@ -1,0 +1,8 @@
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.deps.json
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.dll
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.pdb
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.csprojAssemblyReference.cache
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.AssemblyInfo.cs
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.dll
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.pdb

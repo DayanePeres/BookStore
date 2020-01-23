@@ -1,0 +1,8 @@
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.deps.json
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.dll
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.csprojAssemblyReference.cache
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.AssemblyInfoInputs.cache
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.AssemblyInfo.cs
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.dll
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.pdb

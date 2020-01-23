@@ -1,0 +1,13 @@
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.deps.json
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.dll
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.AssemblyInfoInputs.cache
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.AssemblyInfo.cs
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.csprojAssemblyReference.cache
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.pdb
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Domain.dll
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.csproj.CopyComplete
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.dll
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.pdb
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.runtimeconfig.json
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.runtimeconfig.dev.json

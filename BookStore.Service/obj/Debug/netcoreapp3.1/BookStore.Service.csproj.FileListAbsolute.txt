@@ -6,3 +6,5 @@ C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\obj\Debu
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfo.cs
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.dll
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.pdb
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.runtimeconfig.json
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.runtimeconfig.dev.json

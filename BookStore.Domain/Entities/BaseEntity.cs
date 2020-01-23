@@ -12,5 +12,11 @@ namespace BookStore.Domain.Entities
         private DateTime? _createAt  { get; set; }
         public DateTime? _Update { get; set; }
 
+        public DateTime? CreateAt
+        {
+            get { return _createAt; }
+            set { _createAt = (value == null ? DateTime.UtcNow : value); }
+        }
+        public DateTime? UpdateAt { get; set; }
     }
 }

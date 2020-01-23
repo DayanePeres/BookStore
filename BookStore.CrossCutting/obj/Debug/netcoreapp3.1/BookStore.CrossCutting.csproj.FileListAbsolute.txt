@@ -6,3 +6,5 @@ C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.AssemblyInfo.cs
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.dll
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.pdb
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.runtimeconfig.json
+C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.runtimeconfig.dev.json

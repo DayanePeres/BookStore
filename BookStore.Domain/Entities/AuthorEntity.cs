@@ -4,9 +4,9 @@ using System.Text;
 
 namespace BookStore.Domain.Entities
 {
-    public class Genre : BaseEntity
+    public class AuthorEntity : BaseEntity
     {
         public string Name { get; set; }
-        public IList<BookGenre> bookGenres { get; set; }
+        public IList<BookAuthorEntity> ListBookAuthor { get; set; }
     }
 }

@@ -1,31 +1,19 @@
-﻿using BookStore.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace BookStore.Data.Context
 {
-    public class DataContext : DbContext
+    public class DataContext : IDesignTimeDbContextFactory <MyContext>
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+
+        public MyContext CreateDbContext(string[] args)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=DbBookStore;Trusted_Connection=True");
+            var connectionString = "Server=localhost;Database=DbBookStore;Trusted_Connection=True";
+
+            var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
+            optionsBuilder.UseSqlServer(connectionString);
+
+            return new MyContext(optionsBuilder.Options);
         }
-
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            //modelBuilder.Entity<BookGenre>()
-            //    .HasKey(bc => new { bc.BookId, bc.GenreId });
-            //modelBuilder.Entity<Genre>()
-            //    .HasOne(bc => bc.bookGenres)
-            //    .WithMany(b => b.BookGenres);
-            //modelBuilder.Entity<Book>()
-            //    .HasOne(bc => bc.Genre)
-            //    .WithMany(c => c.bookGenres);
-        }
-
-        public DbSet<Book> Books { get; set; }
-        public DbSet<Genre> Genres{ get; set; }
-        public DbSet<BookGenre> BookGenres { get; set; }
-
     }
 }

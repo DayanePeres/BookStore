@@ -12,44 +12,101 @@ namespace BookStore.Data.Repository
     public class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
     {
         private readonly MyContext _myContext;
-        private DbSet<TEntity> dbSet;
+        private DbSet<TEntity> _dbSet;
 
-        public Task Create(TEntity obj)
+        public BaseRepository(MyContext myContext)
         {
-            throw new NotImplementedException();
+            _myContext = myContext;
+            _dbSet = _myContext.Set<TEntity>();
         }
 
-        /* public Task Create(TEntity obj)
-         {
-            *//* try
-             {
-                 if(obj.Id.)
-             }
-             catch (Exception)
-             {
-
-                 throw;
-             }*//*
-         }*/
-
-        public Task Delete(TEntity obj)
+        public async Task<TEntity> Create(TEntity obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if(obj.Id == Guid.Empty)
+                {
+                    obj.Id = Guid.NewGuid();
+                }
+                obj.CreateAt = DateTime.UtcNow;
+                _dbSet.Add(obj);
+                await _myContext.SaveChangesAsync();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            return obj;
         }
 
-        public Task<TEntity> Select(int id)
+        public async Task<bool> Delete(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var result = await _dbSet.SingleOrDefaultAsync(p => p.Id.Equals(id));
+
+                if (result == null)
+                    return false;
+
+                _dbSet.Remove(result);
+                await _myContext.SaveChangesAsync();
+                
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            
         }
 
-        public IQueryable<TEntity> SelectAll()
+        public async Task<TEntity> Select(Guid id)
         {
-            return null;
+            try
+            {
+                return await _dbSet.SingleOrDefaultAsync(p => p.Id.Equals(id));
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
         }
 
-        public Task Update(TEntity obj)
+        public async Task<IEnumerable<TEntity>> SelectAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dbSet.ToListAsync();
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+        }
+
+        public async Task<TEntity> Update(TEntity obj)
+        {
+            try
+            {
+                var result = await _dbSet.SingleOrDefaultAsync(p => p.Id.Equals(obj.Id));
+                if (result == null)
+                    return null;
+
+                obj.UpdateAt = DateTime.UtcNow;
+                obj.CreateAt = result.CreateAt;
+
+                _myContext.Entry(result).CurrentValues.SetValues(obj);
+                
+                await _myContext.SaveChangesAsync();
+                return obj;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

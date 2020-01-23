@@ -16,7 +16,8 @@ namespace BookStore.Data.Context
         public DbSet<GenreEntity> genreEntities { get; set; }
         public DbSet<BookAuthorEntity> bookAuthorEntities { get; set; }
 
-        public MyContext(DbContextOptions<MyContext> options) : base(options) { }
+        public MyContext(DbContextOptions<MyContext> options) 
+            : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

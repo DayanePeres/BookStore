@@ -9,10 +9,14 @@ namespace BookStore.Data.Repository
 {
     public interface IRepository<TEntity> where TEntity : BaseEntity
     {
-        Task Create (TEntity obj);
-        Task Update(TEntity obj);
-        Task Delete(TEntity obj);
-        Task<TEntity> Select(int id);
-        IQueryable<TEntity> SelectAll();
+        Task<TEntity> Create (TEntity obj);
+
+        Task<TEntity> Update(TEntity obj);
+
+        Task<bool> Delete(Guid id);
+
+        Task<TEntity> Select(Guid id);
+
+        Task<IEnumerable<TEntity>> SelectAll();
     }
 }

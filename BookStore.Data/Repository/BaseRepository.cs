@@ -1,5 +1,6 @@
 ﻿using BookStore.Data.Context;
 using BookStore.Domain.Entities;
+using BookStore.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Data.Repository
 {
-    public class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
     {
         private readonly MyContext _myContext;
         private DbSet<TEntity> _dbSet;
@@ -75,15 +76,9 @@ namespace BookStore.Data.Repository
 
         public async Task<IEnumerable<TEntity>> SelectAll()
         {
-            try
-            {
+          
                 return await _dbSet.ToListAsync();
-            }
-            catch (Exception)
-            {
-
-                return null;
-            }
+          
         }
 
         public async Task<TEntity> Update(TEntity obj)

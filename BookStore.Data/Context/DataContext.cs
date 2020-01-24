@@ -8,7 +8,7 @@ namespace BookStore.Data.Context
 
         public MyContext CreateDbContext(string[] args)
         {
-            var connectionString = "Server=localhost;Database=DbBookStore;Trusted_Connection=True";
+            var connectionString = "Server=localhost,11433;Database=BookStore;Uid=SA;Pwd=DockerSql2017!;";
 
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
             optionsBuilder.UseSqlServer(connectionString);

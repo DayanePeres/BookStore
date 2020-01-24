@@ -7,4 +7,3 @@ C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Application\obj\
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Application\obj\Debug\netcoreapp3.1\BookStore.Application.pdb
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Application\bin\Debug\netcoreapp3.1\BookStore.Application.runtimeconfig.json
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Application\bin\Debug\netcoreapp3.1\BookStore.Application.runtimeconfig.dev.json
-C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Application\obj\Debug\netcoreapp3.1\BookStore.Application.csprojAssemblyReference.cache

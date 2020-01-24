@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookStore.Data.Repository
+namespace BookStore.Domain.Interfaces
 {
-    public interface IRepository<TEntity> where TEntity : BaseEntity
+    public interface IBaseRepository<TEntity> where TEntity : BaseEntity
     {
-        Task<TEntity> Create (TEntity obj);
+        Task<TEntity> Create(TEntity obj);
 
         Task<TEntity> Update(TEntity obj);
 

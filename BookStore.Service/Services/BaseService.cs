@@ -32,7 +32,7 @@ namespace BookStore.Service.Services
             return await baseRepository.SelectAll();
         }
 
-        public async Task<bsEntity> Post(bsEntity obj)
+        public virtual async Task<bsEntity> Post(bsEntity obj)
         {
             return await baseRepository.Create(obj);
 

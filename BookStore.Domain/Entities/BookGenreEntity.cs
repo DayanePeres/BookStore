@@ -8,9 +8,9 @@ namespace BookStore.Domain.Entities
     {
 
         public Guid BookId { get; set; }
-        public BookEntity Book { get; set; }
+        public virtual BookEntity Book { get; set; }
         public Guid GenreId { get; set; }
-        public GenreEntity Genre { get; set; }
+        public virtual GenreEntity Genre { get; set; }
 
 
     }

@@ -25,19 +25,22 @@ namespace BookStore.Data.Repository
         {
             try
             {
-                if(obj.Id == Guid.Empty)
+                if (obj.Id == Guid.Empty)
                 {
                     obj.Id = Guid.NewGuid();
                 }
                 obj.CreateAt = DateTime.UtcNow;
                 _dbSet.Add(obj);
-                await _myContext.SaveChangesAsync();
+                 await _myContext.SaveChangesAsync();
+                return obj;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+
                 return null;
             }
-            return obj;
+                
+           
         }
 
         public async Task<bool> Delete(Guid id)

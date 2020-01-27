@@ -13,11 +13,5 @@ namespace BookStore.Domain.Entities
         public IList<BookAuthorEntity> ListBookAuthor { get; set; }
         public IList<BookGenreEntity> ListBookGenres { get; set; }
 
-        public BookEntity(string name, decimal price, int quantity)
-        {
-            Name = name;
-            Price = price;
-            Quantity = quantity;
-        }
     }
 }

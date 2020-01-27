@@ -17,9 +17,9 @@ namespace BookStore.Service.Services
             this.baseRepository = baseRepository;
         }
 
-        public void Delete(Guid id)
+        public async Task<bool> Delete(Guid id)
         {
-            baseRepository.Delete(id);
+            return await baseRepository.Delete(id);
         }
 
         public async Task<bsEntity> Get(Guid id)
@@ -32,13 +32,13 @@ namespace BookStore.Service.Services
             return await baseRepository.SelectAll();
         }
 
-        public async Task<bsEntity> Post<AbsValid>(bsEntity obj) where AbsValid : AbstractValidator<bsEntity>
+        public async Task<bsEntity> Post(bsEntity obj)
         {
             return await baseRepository.Create(obj);
 
         }
 
-        public async Task<bsEntity> Put<AbsValid>(bsEntity obj) where AbsValid : AbstractValidator<bsEntity>
+        public async Task<bsEntity> Put (bsEntity obj)
         {
             return await baseRepository.Update(obj);
         }

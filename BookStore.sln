@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Domain", "BookStore.Domain\BookStore.Domain.csproj", "{74D26E27-55B1-454E-975D-231577693700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Domain", "BookStore.Domain\BookStore.Domain.csproj", "{74D26E27-55B1-454E-975D-231577693700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.CrossCutting", "BookStore.CrossCutting\BookStore.CrossCutting.csproj", "{65CE94E3-95E6-4327-AEAC-B6E69C3EFE6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.CrossCutting", "BookStore.CrossCutting\BookStore.CrossCutting.csproj", "{65CE94E3-95E6-4327-AEAC-B6E69C3EFE6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Service", "BookStore.Service\BookStore.Service.csproj", "{377019C8-0DC9-405E-B99A-6E30704B8E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Service", "BookStore.Service\BookStore.Service.csproj", "{377019C8-0DC9-405E-B99A-6E30704B8E76}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{844AB33B-1FE1-4E79-B5B8-93AEF6450F42}"
 EndProject
@@ -19,9 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{056D239C-CFA3-47D9-8723-3E8809333CE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Data", "BookStore.Data\BookStore.Data.csproj", "{D02FBB90-223F-47B6-9569-9C552FE1390A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Data", "BookStore.Data\BookStore.Data.csproj", "{D02FBB90-223F-47B6-9569-9C552FE1390A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Application", "BookStore.Api\BookStore.Application.csproj", "{2CFED830-4851-4DA2-8FA4-B595EBC09450}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Application", "BookStore.Api\BookStore.Application.csproj", "{2CFED830-4851-4DA2-8FA4-B595EBC09450}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F4466375-2BA0-4204-8C75-47C644745773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Test", "BookTest\BookStore.Test.csproj", "{088E2184-4729-4234-928E-0AAA508C8EAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{2CFED830-4851-4DA2-8FA4-B595EBC09450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CFED830-4851-4DA2-8FA4-B595EBC09450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CFED830-4851-4DA2-8FA4-B595EBC09450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088E2184-4729-4234-928E-0AAA508C8EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088E2184-4729-4234-928E-0AAA508C8EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088E2184-4729-4234-928E-0AAA508C8EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088E2184-4729-4234-928E-0AAA508C8EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{377019C8-0DC9-405E-B99A-6E30704B8E76} = {056D239C-CFA3-47D9-8723-3E8809333CE5}
 		{D02FBB90-223F-47B6-9569-9C552FE1390A} = {F68A780C-8E49-45CF-829E-04C8416AA2BE}
 		{2CFED830-4851-4DA2-8FA4-B595EBC09450} = {844AB33B-1FE1-4E79-B5B8-93AEF6450F42}
+		{088E2184-4729-4234-928E-0AAA508C8EAF} = {F4466375-2BA0-4204-8C75-47C644745773}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EED9F0DF-609E-443A-A1BD-B923A977855E}

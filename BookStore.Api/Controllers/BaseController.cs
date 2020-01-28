@@ -53,9 +53,15 @@ namespace BookStore.Application.Controllers
             {
                 return BadRequest(ModelState);
             }
+
             try
             {
-                return Ok(await _baseService.Get(id));
+                var response = (await _baseService.Get(id));
+
+                if (response != null)
+                    return Ok(response);
+
+                return NotFound();
             }
             catch (ArgumentException ex)
             {

@@ -11,10 +11,8 @@ namespace BookStore.Service.Services
 {
     public class BookService : BaseService<BookEntity>, IBookService
     {
-        private readonly IAuthorRepository _authorRepository;
-        public BookService(IBookRepository baseRepository, IAuthorRepository authorRepository ) : base(baseRepository)
+        public BookService(IBookRepository baseRepository) : base(baseRepository)
         {
-            _authorRepository = _authorRepository;
         }
 
         public override Task<BookEntity> Post(BookEntity obj)

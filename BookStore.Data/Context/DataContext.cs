@@ -11,9 +11,12 @@ namespace BookStore.Data.Context
             var connectionString = "Server=localhost,11433;Database=BookStore;Uid=SA;Pwd=DockerSql2017!;";
 
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
+           // if(!string.IsNullOrEmpty(EnviromentProperties.ConnectionString))
             optionsBuilder.UseSqlServer(connectionString);
 
             return new MyContext(optionsBuilder.Options);
         }
+
+       
     }
 }

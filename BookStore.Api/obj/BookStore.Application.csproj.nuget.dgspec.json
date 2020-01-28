@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\BookStore.Application.csproj": {}
+    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\BookStore.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\BookStore.Application.csproj": {
+    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\BookStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\BookStore.Application.csproj",
+        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\BookStore.Application.csproj",
         "projectName": "BookStore.Application",
-        "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\BookStore.Application.csproj",
-        "packagesPath": "C:\\Users\\dayane.peres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\obj\\",
+        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\BookStore.Application.csproj",
+        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,16 +22,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
-                "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj"
+              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj"
               },
-              "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
-                "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj"
+              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj": {
+                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj"
               }
             }
           }
@@ -82,17 +83,17 @@
         }
       }
     },
-    "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
+    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
         "projectName": "BookStore.CrossCutting",
-        "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\dayane.peres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\obj\\",
+        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,16 +101,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
-                "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj"
+              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj": {
+                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj"
               },
-              "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
-                "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj"
+              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj": {
+                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj"
               }
             }
           }
@@ -160,17 +162,17 @@
         }
       }
     },
-    "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
+    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
+        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj",
         "projectName": "BookStore.Data",
-        "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
-        "packagesPath": "C:\\Users\\dayane.peres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\obj\\",
+        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj",
+        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -178,13 +180,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-                "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj"
               }
             }
           }
@@ -247,17 +250,17 @@
         }
       }
     },
-    "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj",
         "projectName": "BookStore.Domain",
-        "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
-        "packagesPath": "C:\\Users\\dayane.peres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\obj\\",
+        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -265,6 +268,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -326,17 +330,17 @@
         }
       }
     },
-    "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
+    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
+        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj",
         "projectName": "BookStore.Service",
-        "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
-        "packagesPath": "C:\\Users\\dayane.peres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\obj\\",
+        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj",
+        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -344,13 +348,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-                "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj"
               }
             }
           }

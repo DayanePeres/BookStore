@@ -56,7 +56,7 @@ namespace BookTest
             book.Name = "";
             book.Id = Guid.NewGuid();
 
-            _bookService.Setup(x => x.Get(book.Id)).Returns( Task.FromResult(book) );
+            //_bookService.Setup(x => x.Get(book.Id)).Returns( Task.FromResult(book) );
 
 
             //Act

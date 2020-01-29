@@ -16,7 +16,7 @@ namespace BookStore.Data.Mapping
             builder.HasKey(a => a.Id);
             builder.Property(a => a.Name)
                 .IsRequired()
-                .HasMaxLength(250);
+                .HasMaxLength(255);
 
           
         }

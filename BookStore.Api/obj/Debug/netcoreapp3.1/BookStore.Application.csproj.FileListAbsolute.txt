@@ -82,6 +82,7 @@ C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Api\bin\Debug\netcoreapp
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll

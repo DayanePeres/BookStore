@@ -39,5 +39,26 @@ namespace UnitTest.Configuration
             Server = new TestServer(new WebHostBuilder().UserStartup<Startup>());
             Cliente = testServer.CreateClient();
         }
+
+        private void SetupDataBase()
+        {
+            try
+            {
+                TestDataContext.Database.EnsureCreated();
+                TestDataContext.Database.Migrate();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void Dispose()
+        {
+            TestDataContext.Dispose();
+            Cliente.Dispose();
+            Server.Dispose();
+        }
     }
 }

@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\BaseIntegrationTest.cs" />
+    <Compile Include="Configuration\BaseTestcollection.cs" />
     <Compile Include="Configuration\BaseTestFixture.cs" />
+    <Compile Include="Controllers\BookControllerIntegrationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

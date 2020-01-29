@@ -13,28 +13,28 @@ using System.Threading.Tasks;
 namespace BookStore.Integrated.Test
 {
     [TestClass]
-    public class AuthorTest
+    public class GenreTest
     {
         private readonly MyContext _myContext;
-        private readonly AuthorRepository _repository;
-        private readonly AuthorService _service;
-        private readonly AuthorController _controller;
+        private readonly GenreRepository _repository;
+        private readonly GenreService _service;
+        private readonly GenreController _controller;
 
 
-        public AuthorTest()
+        public GenreTest()
         {
             EnvironmentProperties.ConnectionString = "";
             _myContext = new DataContext().CreateDbContext(new string[] { });
-            _repository = new AuthorRepository(_myContext);
-            _service = new AuthorService(_repository);
-            _controller = new AuthorController(_service);
+            _repository = new GenreRepository(_myContext);
+            _service = new GenreService(_repository);
+            _controller = new GenreController(_service);
 
         }
 
         [TestMethod]
-        public async Task ShouldGetAnEmptyAuthorsList()
+        public async Task ShouldGetAnEmptyGenresList()
         {
-            var response = (OkObjectResult) await _controller.GetAll();
+            var response = (OkObjectResult)await _controller.GetAll();
 
             var value = response.Value.GetType()
                 .GetProperty("Count")
@@ -45,16 +45,17 @@ namespace BookStore.Integrated.Test
         }
 
         [TestMethod]
-        public async Task ShouldPostAuthors()
+        public async Task ShouldPostGenres()
         {
-            AuthorEntity author = new AuthorEntity { 
+            GenreEntity Genre = new GenreEntity
+            {
                 Name = "JoaoDoJeitoCerto"
             };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            var responsePost = await _controller.Post(Genre);
+            var respPost = (GenreEntity)(((OkObjectResult)((ActionResult<GenreEntity>)responsePost).Result).Value);
 
             var responseGet = await _controller.Get(respPost.Id);
-            var respGet = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responseGet).Result).Value);
+            var respGet = (GenreEntity)(((OkObjectResult)((ActionResult<GenreEntity>)responseGet).Result).Value);
 
             var responseGetAll = (OkObjectResult)await _controller.GetAll();
             var respGetAll = responseGetAll.Value.GetType()
@@ -64,25 +65,25 @@ namespace BookStore.Integrated.Test
 
             Assert.AreEqual(200, (int)((OkObjectResult)responsePost).StatusCode);
             Assert.AreEqual(200, (int)((OkObjectResult)responseGet).StatusCode);
-            Assert.AreEqual(respGet.Id,respPost.Id);
+            Assert.AreEqual(respGet.Id, respPost.Id);
             Assert.AreEqual(1, respGetAll);
 
         }
 
         [TestMethod]
-        public async Task ShouldPutAuthorById()
+        public async Task ShouldPutGenreById()
         {
-            AuthorEntity author = new AuthorEntity
+            GenreEntity Genre = new GenreEntity
             {
                 Name = "JoaoDoJeitoCerto"
             };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            var responsePost = await _controller.Post(Genre);
+            var respPost = (GenreEntity)(((OkObjectResult)((ActionResult<GenreEntity>)responsePost).Result).Value);
 
-            author.Name = "JoaoAtualizado";
-            
-            var responsePut = await _controller.Put(author,respPost.Id);
-            var respPut = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePut).Result).Value);
+            Genre.Name = "JoaoAtualizado";
+
+            var responsePut = await _controller.Put(Genre, respPost.Id);
+            var respPut = (GenreEntity)(((OkObjectResult)((ActionResult<GenreEntity>)responsePut).Result).Value);
 
             var responseGetAll = (OkObjectResult)await _controller.GetAll();
             var respGetAll = responseGetAll.Value.GetType()
@@ -92,26 +93,26 @@ namespace BookStore.Integrated.Test
 
             Assert.AreEqual(200, (int)((OkObjectResult)responsePost).StatusCode);
             Assert.AreEqual(200, (int)((OkObjectResult)responsePut).StatusCode);
-            Assert.AreEqual(respPut.Name, author.Name);
+            Assert.AreEqual(respPut.Name, Genre.Name);
             Assert.AreEqual(2, respGetAll);
 
         }
 
         [TestMethod]
-        public async Task ShouldDeleteAuthorById()
+        public async Task ShouldDeleteGenreById()
         {
-            AuthorEntity author = new AuthorEntity
+            GenreEntity Genre = new GenreEntity
             {
                 Name = "JoaoDoJeitoCerto"
             };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            var responsePost = await _controller.Post(Genre);
+            var respPost = (GenreEntity)(((OkObjectResult)((ActionResult<GenreEntity>)responsePost).Result).Value);
 
             var responseDelete = await _controller.Delete(respPost.Id);
-            var respDelete = (bool)(((OkObjectResult)((ActionResult<AuthorEntity>)responseDelete).Result).Value);
+            var respDelete = (bool)(((OkObjectResult)((ActionResult<GenreEntity>)responseDelete).Result).Value);
 
             var responseGet = await _controller.Get(respPost.Id);
-            
+
 
             var responseGetAll = (OkObjectResult)await _controller.GetAll();
             var respGetAll = responseGetAll.Value.GetType()
@@ -123,20 +124,20 @@ namespace BookStore.Integrated.Test
             Assert.AreEqual(200, (int)((OkObjectResult)responseDelete).StatusCode);
             Assert.AreEqual(200, (int)((OkObjectResult)responseGetAll).StatusCode);
             Assert.IsTrue(respDelete);
-            Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult) );
+            Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult));
             Assert.AreEqual(2, respGetAll);
         }
 
-        public async Task ShouldFindAllAuthorAndDelete()
+        public async Task ShouldFindAllGenreAndDelete()
         {
 
             var responseGetAll = (OkObjectResult)await _controller.GetAll();
-            var respGetAll = (IEnumerable<AuthorEntity>)(((OkObjectResult)((ActionResult<AuthorEntity>)responseGetAll).Result).Value);
+            var respGetAll = (IEnumerable<GenreEntity>)(((OkObjectResult)((ActionResult<GenreEntity>)responseGetAll).Result).Value);
 
-            foreach(AuthorEntity author in respGetAll)
+            foreach (GenreEntity Genre in respGetAll)
             {
-                var responseDelete = await _controller.Delete(author.Id);
-                var respDelete = (bool)(((OkObjectResult)((ActionResult<AuthorEntity>)responseDelete).Result).Value);
+                var responseDelete = await _controller.Delete(Genre.Id);
+                var respDelete = (bool)(((OkObjectResult)((ActionResult<GenreEntity>)responseDelete).Result).Value);
                 Assert.IsTrue(respDelete);
             }
 

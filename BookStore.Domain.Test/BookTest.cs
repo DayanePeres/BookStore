@@ -13,28 +13,28 @@ using System.Threading.Tasks;
 namespace BookStore.Integrated.Test
 {
     [TestClass]
-    public class AuthorTest
+    public class BookTest
     {
         private readonly MyContext _myContext;
-        private readonly AuthorRepository _repository;
-        private readonly AuthorService _service;
-        private readonly AuthorController _controller;
+        private readonly BookRepository _repository;
+        private readonly BookService _service;
+        private readonly BookController _controller;
 
 
-        public AuthorTest()
+        public BookTest()
         {
             EnvironmentProperties.ConnectionString = "";
             _myContext = new DataContext().CreateDbContext(new string[] { });
-            _repository = new AuthorRepository(_myContext);
-            _service = new AuthorService(_repository);
-            _controller = new AuthorController(_service);
+            _repository = new BookRepository(_myContext);
+            _service = new BookService(_repository);
+            _controller = new BookController(_service);
 
         }
 
         [TestMethod]
-        public async Task ShouldGetAnEmptyAuthorsList()
+        public async Task ShouldGetAnEmptyBooksList()
         {
-            var response = (OkObjectResult) await _controller.GetAll();
+            var response = (OkObjectResult)await _controller.GetAll();
 
             var value = response.Value.GetType()
                 .GetProperty("Count")
@@ -45,16 +45,18 @@ namespace BookStore.Integrated.Test
         }
 
         [TestMethod]
-        public async Task ShouldPostAuthors()
+        public async Task ShouldPostBooks()
         {
-            AuthorEntity author = new AuthorEntity { 
-                Name = "JoaoDoJeitoCerto"
+            BookEntity Book = new BookEntity
+            {
+                Name = "JoaoDoJeitoCerto",
+                Price = 10
             };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            var responsePost = await _controller.Post(Book);
+            var respPost = (BookEntity)(((OkObjectResult)((ActionResult<BookEntity>)responsePost).Result).Value);
 
             var responseGet = await _controller.Get(respPost.Id);
-            var respGet = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responseGet).Result).Value);
+            var respGet = (BookEntity)(((OkObjectResult)((ActionResult<BookEntity>)responseGet).Result).Value);
 
             var responseGetAll = (OkObjectResult)await _controller.GetAll();
             var respGetAll = responseGetAll.Value.GetType()
@@ -64,25 +66,26 @@ namespace BookStore.Integrated.Test
 
             Assert.AreEqual(200, (int)((OkObjectResult)responsePost).StatusCode);
             Assert.AreEqual(200, (int)((OkObjectResult)responseGet).StatusCode);
-            Assert.AreEqual(respGet.Id,respPost.Id);
+            Assert.AreEqual(respGet.Id, respPost.Id);
             Assert.AreEqual(1, respGetAll);
 
         }
 
         [TestMethod]
-        public async Task ShouldPutAuthorById()
+        public async Task ShouldPutBookById()
         {
-            AuthorEntity author = new AuthorEntity
+            BookEntity Book = new BookEntity
             {
-                Name = "JoaoDoJeitoCerto"
+                Name = "JoaoDoJeitoCerto",
+                Price = 10
             };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            var responsePost = await _controller.Post(Book);
+            var respPost = (BookEntity)(((OkObjectResult)((ActionResult<BookEntity>)responsePost).Result).Value);
 
-            author.Name = "JoaoAtualizado";
-            
-            var responsePut = await _controller.Put(author,respPost.Id);
-            var respPut = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePut).Result).Value);
+            Book.Name = "JoaoAtualizado";
+
+            var responsePut = await _controller.Put(Book, respPost.Id);
+            var respPut = (BookEntity)(((OkObjectResult)((ActionResult<BookEntity>)responsePut).Result).Value);
 
             var responseGetAll = (OkObjectResult)await _controller.GetAll();
             var respGetAll = responseGetAll.Value.GetType()
@@ -92,26 +95,27 @@ namespace BookStore.Integrated.Test
 
             Assert.AreEqual(200, (int)((OkObjectResult)responsePost).StatusCode);
             Assert.AreEqual(200, (int)((OkObjectResult)responsePut).StatusCode);
-            Assert.AreEqual(respPut.Name, author.Name);
+            Assert.AreEqual(respPut.Name, Book.Name);
             Assert.AreEqual(2, respGetAll);
 
         }
 
         [TestMethod]
-        public async Task ShouldDeleteAuthorById()
+        public async Task ShouldDeleteBookById()
         {
-            AuthorEntity author = new AuthorEntity
+            BookEntity Book = new BookEntity
             {
-                Name = "JoaoDoJeitoCerto"
+                Name = "JoaoDoJeitoCerto",
+                Price = 10
             };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            var responsePost = await _controller.Post(Book);
+            var respPost = (BookEntity)(((OkObjectResult)((ActionResult<BookEntity>)responsePost).Result).Value);
 
             var responseDelete = await _controller.Delete(respPost.Id);
-            var respDelete = (bool)(((OkObjectResult)((ActionResult<AuthorEntity>)responseDelete).Result).Value);
+            var respDelete = (bool)(((OkObjectResult)((ActionResult<BookEntity>)responseDelete).Result).Value);
 
             var responseGet = await _controller.Get(respPost.Id);
-            
+
 
             var responseGetAll = (OkObjectResult)await _controller.GetAll();
             var respGetAll = responseGetAll.Value.GetType()
@@ -123,20 +127,20 @@ namespace BookStore.Integrated.Test
             Assert.AreEqual(200, (int)((OkObjectResult)responseDelete).StatusCode);
             Assert.AreEqual(200, (int)((OkObjectResult)responseGetAll).StatusCode);
             Assert.IsTrue(respDelete);
-            Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult) );
+            Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult));
             Assert.AreEqual(2, respGetAll);
         }
 
-        public async Task ShouldFindAllAuthorAndDelete()
+        public async Task ShouldFindAllBookAndDelete()
         {
 
             var responseGetAll = (OkObjectResult)await _controller.GetAll();
-            var respGetAll = (IEnumerable<AuthorEntity>)(((OkObjectResult)((ActionResult<AuthorEntity>)responseGetAll).Result).Value);
+            var respGetAll = (IEnumerable<BookEntity>)(((OkObjectResult)((ActionResult<BookEntity>)responseGetAll).Result).Value);
 
-            foreach(AuthorEntity author in respGetAll)
+            foreach (BookEntity Book in respGetAll)
             {
-                var responseDelete = await _controller.Delete(author.Id);
-                var respDelete = (bool)(((OkObjectResult)((ActionResult<AuthorEntity>)responseDelete).Result).Value);
+                var responseDelete = await _controller.Delete(Book.Id);
+                var respDelete = (bool)(((OkObjectResult)((ActionResult<BookEntity>)responseDelete).Result).Value);
                 Assert.IsTrue(respDelete);
             }
 

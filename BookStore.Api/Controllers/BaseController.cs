@@ -98,13 +98,14 @@ namespace BookStore.Application.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] bsEntity bsEntity)
+        [Route("{id}")]
+        public async Task<ActionResult> Put([FromBody] bsEntity bsEntity,Guid id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-
+            bsEntity.Id = id;
             try
             {
                 var result = await _baseService.Put(bsEntity);

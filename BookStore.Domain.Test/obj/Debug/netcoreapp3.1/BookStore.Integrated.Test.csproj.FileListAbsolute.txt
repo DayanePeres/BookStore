@@ -1,6 +1,3 @@
-C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.csprojAssemblyReference.cache
-C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.AssemblyInfoInputs.cache
-C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.AssemblyInfo.cs
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -414,6 +411,9 @@ C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\ne
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Data.pdb
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Service.pdb
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.csprojAssemblyReference.cache
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.AssemblyInfoInputs.cache
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.AssemblyInfo.cs
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.csproj.CopyComplete
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\obj\Debug\netcoreapp3.1\BookStore.Integrated.Test.pdb

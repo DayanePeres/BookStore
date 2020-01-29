@@ -1,6 +1,4 @@
-﻿using BookStore.Api;
-using BookStore.Application.Controllers;
-using BookStore.CrossCutting;
+﻿using BookStore.Application.Controllers;
 using BookStore.Data;
 using BookStore.Data.Context;
 using BookStore.Data.Repository;
@@ -8,12 +6,6 @@ using BookStore.Domain.Entities;
 using BookStore.Service.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 
 

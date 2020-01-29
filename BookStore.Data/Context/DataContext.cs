@@ -8,11 +8,16 @@ namespace BookStore.Data.Context
 
         public MyContext CreateDbContext(string[] args)
         {
-            var connectionString = "Server=localhost,11433;Database=BookStore;Uid=SA;Pwd=DockerSql2017!;";
 
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
-           // if(!string.IsNullOrEmpty(EnviromentProperties.ConnectionString))
-            optionsBuilder.UseSqlServer(connectionString);
+            if (!string.IsNullOrEmpty(EnvironmentProperties.ConnectionString))
+            {
+                optionsBuilder.UseSqlServer(EnvironmentProperties.ConnectionString);
+            }
+            else
+            {
+                optionsBuilder.UseInMemoryDatabase(EnvironmentProperties.DatabaseName);
+            }
 
             return new MyContext(optionsBuilder.Options);
         }

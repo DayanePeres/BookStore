@@ -11,3 +11,16 @@ C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\obj\Debu
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CopyComplete
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.dll
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.pdb
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.deps.json
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.runtimeconfig.json
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.runtimeconfig.dev.json
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.dll
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.pdb
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Domain.dll
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csprojAssemblyReference.cache
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfoInputs.cache
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfo.cs
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CopyComplete
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.dll
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.pdb

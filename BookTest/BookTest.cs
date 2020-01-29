@@ -1,4 +1,5 @@
 ﻿using BookStore.Application.Controllers;
+using BookStore.CrossCutting;
 using BookStore.Data.Context;
 using BookStore.Data.Repository;
 using BookStore.Domain.Entities;
@@ -20,15 +21,19 @@ namespace BookTest
     public class BookTest
     {
         private BookController _bookController;
-        private Mock<IBookService> _bookService;
+        private IBookService _bookService;
 
 
         [TestInitialize]
         public void Setup()
         {
             //ARREGE
-            _bookService = new Mock<IBookService>();
-            _bookController = new BookController(_bookService.Object);
+            EnviromentProperties.ConnectionString = String.Empty;
+
+            var myContext = new DataContext().CreateDbContext(new string[] { });
+            var repository = new BookRepository(myContext);
+            _bookService = new BookService(repository);
+            _bookController = new BookController(_bookService);
         }
 
         [TestMethod]

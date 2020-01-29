@@ -8,18 +8,15 @@ namespace BookStore.Data.Context
 
         public MyContext CreateDbContext(string[] args)
         {
+            DbContextOptionsBuilder<MyContext> context = getOptionBuilder(string.IsNullOrEmpty(EnvironmentProperties.ConnectionString));
+            return new MyContext(context.Options);
+            //
+        }
 
+        private DbContextOptionsBuilder<MyContext> getOptionBuilder(bool isDev)
+        {
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
-            if (!string.IsNullOrEmpty(EnvironmentProperties.ConnectionString))
-            {
-                optionsBuilder.UseSqlServer(EnvironmentProperties.ConnectionString);
-            }
-            else
-            {
-                optionsBuilder.UseInMemoryDatabase(EnvironmentProperties.DatabaseName);
-            }
-
-            return new MyContext(optionsBuilder.Options);
+            return isDev  == true ? optionsBuilder.UseInMemoryDatabase(EnvironmentProperties.DataBaseName) : optionsBuilder.UseSqlServer(EnvironmentProperties.ConnectionString);
         }
 
        

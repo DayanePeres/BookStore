@@ -5579,19 +5579,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dayane.peres\\.nuget\\packages\\": {}
+    "C:\\Users\\christian.tomyama\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+      "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
       "projectName": "BookStore.CrossCutting",
-      "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
-      "packagesPath": "C:\\Users\\dayane.peres\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\obj\\",
+      "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+      "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5599,16 +5599,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://packagesource": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
-              "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj"
+            "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj": {
+              "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj"
             },
-            "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
-              "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj"
+            "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj": {
+              "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj"
             }
           }
         }

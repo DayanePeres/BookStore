@@ -15,13 +15,13 @@ namespace BookStore.Integrated.Test
     [TestClass]
     public class GenreTest
     {
-        private readonly MyContext _myContext;
-        private readonly GenreRepository _repository;
-        private readonly GenreService _service;
-        private readonly GenreController _controller;
+        private static MyContext _myContext;
+        private static GenreRepository _repository;
+        private static GenreService _service;
+        private static GenreController _controller;
 
-
-        public GenreTest()
+        [ClassInitialize]
+        public static void Setup(TestContext context)
         {
             EnvironmentProperties.ConnectionString = "";
             _myContext = new DataContext().CreateDbContext(new string[] { });

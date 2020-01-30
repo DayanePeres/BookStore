@@ -406,7 +406,6 @@ C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\ne
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Domain.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Service.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Application.pdb
-C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Application.xml
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.pdb
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Data.pdb
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Domain.Test\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb

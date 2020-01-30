@@ -8,7 +8,7 @@ namespace BookStore.Service.Services
 {
     public class BaseService<bsEntity> : IBaseService<bsEntity> where bsEntity : BaseEntity
     {
-        private readonly IBaseRepository<bsEntity> baseRepository;
+        protected readonly IBaseRepository<bsEntity> baseRepository;
 
         public BaseService(IBaseRepository<bsEntity> baseRepository)
         {

@@ -32,7 +32,7 @@ namespace BookStore.Integrated.Test
         [ClassInitialize]
         public static void Setup(TestContext context)
         {
-            Helper.ConnectionString.setDev();
+             Helper.ConnectionString.setDev();
             _myContext = new DataContext().CreateDbContext(new string[] { });
             SetupBook();
             SetupGenre();

@@ -8,8 +8,10 @@ namespace BookStore.Service.Services
 {
     public class BookService : BaseService<BookEntity>, IBookService
     {
+        private readonly IBookRepository _bookRepository;
         public BookService(IBookRepository baseRepository) : base(baseRepository)
         {
+            _bookRepository = baseRepository;
         }
 
         public override Task<BookEntity> Post(BookEntity obj)
@@ -38,6 +40,14 @@ namespace BookStore.Service.Services
             return base.Post(obj);
         }
 
-        
+        public object GetAllWithAuthorAndGenre() {
+            return _bookRepository.SelectAllWithAuthorAndGenre(null);
+        }
+
+        public object GetOneWithAuthorAndGenre(Guid id)
+        {
+            return _bookRepository.SelectOneWithAuthorAndGenre(id);
+        }
+
     }
 }

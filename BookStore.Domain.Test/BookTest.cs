@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Integrated.Test
 {
-    [TestClass]
+   // [TestClass]
     public class BookTest
     {
         private readonly MyContext _myContext;

@@ -15,13 +15,13 @@ namespace BookStore.Integrated.Test
     [TestClass]
     public class AuthorTest
     {
-        private readonly MyContext _myContext;
-        private readonly AuthorRepository _repository;
-        private readonly AuthorService _service;
-        private readonly AuthorController _controller;
+        private static MyContext _myContext;
+        private static AuthorRepository _repository;
+        private static AuthorService _service;
+        private static AuthorController _controller;
 
-
-        public AuthorTest()
+        [ClassInitialize]
+        public static void Setup(TestContext context)
         {
             EnvironmentProperties.ConnectionString = "";
             _myContext = new DataContext().CreateDbContext(new string[] { });
@@ -124,7 +124,6 @@ namespace BookStore.Integrated.Test
             Assert.AreEqual(200, (int)((OkObjectResult)responseGetAll).StatusCode);
             Assert.IsTrue(respDelete);
             Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult) );
-            Assert.AreEqual(2, respGetAll);
         }
 
         public async Task ShouldFindAllAuthorAndDelete()

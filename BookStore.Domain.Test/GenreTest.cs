@@ -125,7 +125,6 @@ namespace BookStore.Integrated.Test
             Assert.AreEqual(200, (int)((OkObjectResult)responseGetAll).StatusCode);
             Assert.IsTrue(respDelete);
             Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult));
-            Assert.AreEqual(2, respGetAll);
         }
 
         public async Task ShouldFindAllGenreAndDelete()

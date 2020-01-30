@@ -1,7 +1,4 @@
 ﻿using BookStore.Data;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BookStore.Integrated.Test.Helper
 {

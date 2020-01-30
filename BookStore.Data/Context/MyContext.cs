@@ -1,10 +1,6 @@
 ﻿using BookStore.Data.Mapping;
 using BookStore.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using Rebus.Config;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BookStore.Data.Context
 {

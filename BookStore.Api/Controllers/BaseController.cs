@@ -1,10 +1,7 @@
 ﻿using BookStore.Domain.Entities;
 using BookStore.Domain.Interfaces;
-using BookStore.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 

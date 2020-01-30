@@ -1,5 +1,4 @@
 ﻿using BookStore.Application.Controllers;
-using BookStore.Data;
 using BookStore.Data.Context;
 using BookStore.Data.Repository;
 using BookStore.Domain.Entities;

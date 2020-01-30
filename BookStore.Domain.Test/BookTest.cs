@@ -1,5 +1,4 @@
 ﻿using BookStore.Application.Controllers;
-using BookStore.Data;
 using BookStore.Data.Context;
 using BookStore.Data.Repository;
 using BookStore.Domain.Entities;
@@ -7,8 +6,8 @@ using BookStore.Service.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using System.Linq;
+using System.Threading.Tasks;
 
 
 namespace BookStore.Integrated.Test

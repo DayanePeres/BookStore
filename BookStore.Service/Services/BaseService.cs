@@ -1,16 +1,14 @@
 ﻿using BookStore.Domain.Entities;
 using BookStore.Domain.Interfaces;
-using FluentValidation;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BookStore.Service.Services
 {
     public class BaseService<bsEntity> : IBaseService<bsEntity> where bsEntity : BaseEntity
     {
-        private readonly IBaseRepository<bsEntity> baseRepository;
+        protected readonly IBaseRepository<bsEntity> baseRepository;
 
         public BaseService(IBaseRepository<bsEntity> baseRepository)
         {

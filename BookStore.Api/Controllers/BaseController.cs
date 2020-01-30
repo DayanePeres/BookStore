@@ -1,10 +1,7 @@
 ﻿using BookStore.Domain.Entities;
 using BookStore.Domain.Interfaces;
-using BookStore.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -15,7 +12,7 @@ namespace BookStore.Application.Controllers
     public class BaseController<bsEntity> : ControllerBase 
         where bsEntity : BaseEntity 
     {
-        private IBaseService<bsEntity> _baseService;
+        protected readonly IBaseService<bsEntity> _baseService;
 
         public BaseController(IBaseService<bsEntity> baseService)
         {

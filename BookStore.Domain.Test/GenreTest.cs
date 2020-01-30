@@ -1,5 +1,4 @@
 ﻿using BookStore.Application.Controllers;
-using BookStore.Data;
 using BookStore.Data.Context;
 using BookStore.Data.Repository;
 using BookStore.Domain.Entities;
@@ -15,15 +14,15 @@ namespace BookStore.Integrated.Test
     [TestClass]
     public class GenreTest
     {
-        private readonly MyContext _myContext;
-        private readonly GenreRepository _repository;
-        private readonly GenreService _service;
-        private readonly GenreController _controller;
+        private static MyContext _myContext;
+        private static GenreRepository _repository;
+        private static GenreService _service;
+        private static GenreController _controller;
 
-
-        public GenreTest()
+        [ClassInitialize]
+        public static void Setup(TestContext context)
         {
-            EnvironmentProperties.ConnectionString = "";
+            Helper.ConnectionString.setDev();
             _myContext = new DataContext().CreateDbContext(new string[] { });
             _repository = new GenreRepository(_myContext);
             _service = new GenreService(_repository);
@@ -125,9 +124,8 @@ namespace BookStore.Integrated.Test
             Assert.AreEqual(200, (int)((OkObjectResult)responseGetAll).StatusCode);
             Assert.IsTrue(respDelete);
             Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult));
-            Assert.AreEqual(2, respGetAll);
         }
-
+        [TestMethod]
         public async Task ShouldFindAllGenreAndDelete()
         {
 

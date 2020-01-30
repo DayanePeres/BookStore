@@ -3,9 +3,6 @@ using BookStore.Domain.Interfaces;
 using BookStore.Domain.Interfaces.Services;
 using BookStore.Service.Services;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BookStore.CrossCutting.DependencyInjection
 {

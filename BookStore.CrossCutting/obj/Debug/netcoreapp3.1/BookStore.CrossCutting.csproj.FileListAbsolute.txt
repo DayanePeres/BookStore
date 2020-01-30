@@ -15,6 +15,9 @@ C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.csproj.CopyComplete
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.dll
 C:\Users\dayane.peres\Documents\Cursos\Book\BookStore\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.pdb
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.csprojAssemblyReference.cache
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.AssemblyInfo.cs
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.deps.json
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.runtimeconfig.json
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.CrossCutting.runtimeconfig.dev.json
@@ -26,9 +29,6 @@ C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\bin\Debug\n
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.Data.pdb
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.Service.pdb
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
-C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.csprojAssemblyReference.cache
-C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.AssemblyInfoInputs.cache
-C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.AssemblyInfo.cs
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.csproj.CopyComplete
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.CrossCutting\obj\Debug\netcoreapp3.1\BookStore.CrossCutting.pdb

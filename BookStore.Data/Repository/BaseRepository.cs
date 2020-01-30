@@ -4,16 +4,14 @@ using BookStore.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BookStore.Data.Repository
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
     {
-        private readonly MyContext _myContext;
-        private DbSet<TEntity> _dbSet;
+        protected readonly MyContext _myContext;
+        protected DbSet<TEntity> _dbSet;
 
         public BaseRepository(MyContext myContext)
         {

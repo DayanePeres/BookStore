@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj": {}
+    "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj": {
+    "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
         "projectName": "BookStore.Domain",
-        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj",
-        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\obj\\",
+        "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\dayane.peres\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -9394,19 +9394,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\christian.tomyama\\.nuget\\packages\\": {}
+    "C:\\Users\\dayane.peres\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
+      "projectUniqueName": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
       "projectName": "BookStore.Integrated.Test",
-      "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
-      "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain.Test\\obj\\",
+      "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
+      "packagesPath": "C:\\Users\\dayane.peres\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9414,14 +9414,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://packagesource": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\BookStore.Application.csproj": {
-              "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\BookStore.Application.csproj"
+            "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\BookStore.Application.csproj": {
+              "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\BookStore.Application.csproj"
             }
           }
         }

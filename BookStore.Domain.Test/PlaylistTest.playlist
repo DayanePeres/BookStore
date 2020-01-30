@@ -1,0 +1,18 @@
+<Playlist Version="1.0">
+  <Add Test="BookStore.Integrated.Test.BookTest.ShouldGetAnEmptyBooksList" />
+  <Add Test="BookStore.Integrated.Test.GenreTest.ShouldGetAnEmptyGenresList" />
+  <Add Test="BookStore.Integrated.Test.AuthorTest.ShouldGetAnEmptyAuthorsList" />
+  <Add Test="BookStore.Integrated.Test.AuthorTest.ShouldPostAuthors" />
+  <Add Test="BookStore.Integrated.Test.GenreTest.ShouldPostGenres" />
+  <Add Test="BookStore.Integrated.Test.BookTest.ShouldPostBookWithMultipleAuthorAndGenre" />
+  <Add Test="BookStore.Integrated.Test.BookTest.ShouldPostBookWithSingleAuthorAndGenre" />
+  <Add Test="BookStore.Integrated.Test.AuthorTest.ShouldPutAuthorById" />
+  <Add Test="BookStore.Integrated.Test.BookTest.ShouldPutBookById" />
+  <Add Test="BookStore.Integrated.Test.GenreTest.ShouldPutGenreById" />
+  <Add Test="BookStore.Integrated.Test.BookTest.ShouldDeleteBookById" />
+  <Add Test="BookStore.Integrated.Test.GenreTest.ShouldDeleteGenreById" />
+  <Add Test="BookStore.Integrated.Test.AuthorTest.ShouldDeleteAuthorById" />
+  <Add Test="BookStore.Integrated.Test.BookTest.ShouldFindAllBookAndDelete" />
+  <Add Test="BookStore.Integrated.Test.GenreTest.ShouldFindAllGenreAndDelete" />
+  <Add Test="BookStore.Integrated.Test.AuthorTest.ShouldFindAllAuthorAndDelete" />
+</Playlist>

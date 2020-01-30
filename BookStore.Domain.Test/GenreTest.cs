@@ -23,7 +23,7 @@ namespace BookStore.Integrated.Test
         [ClassInitialize]
         public static void Setup(TestContext context)
         {
-            EnvironmentProperties.ConnectionString = "";
+            Helper.ConnectionString.setDev();
             _myContext = new DataContext().CreateDbContext(new string[] { });
             _repository = new GenreRepository(_myContext);
             _service = new GenreService(_repository);
@@ -126,7 +126,7 @@ namespace BookStore.Integrated.Test
             Assert.IsTrue(respDelete);
             Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult));
         }
-
+        [TestMethod]
         public async Task ShouldFindAllGenreAndDelete()
         {
 

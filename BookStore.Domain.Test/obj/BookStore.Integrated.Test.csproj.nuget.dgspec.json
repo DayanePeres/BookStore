@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\dev\\bookstoreDay\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\dev\\bookstoreDay\\BookStore.Api\\BookStore.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Api\\BookStore.Application.csproj",
+        "projectName": "BookStore.Application",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Api\\BookStore.Application.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +44,19 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
                 "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj"
               },
               "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
                 "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj"
+=======
+              "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj"
+              },
+              "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj"
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
               }
             }
           }
@@ -78,10 +103,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -93,6 +119,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "projectName": "BookStore.CrossCutting",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,11 +144,19 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
                 "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj"
               },
               "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
                 "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj"
+=======
+              "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj"
+              },
+              "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj"
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
               }
             }
           }
@@ -156,10 +203,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -171,6 +219,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj",
+        "projectName": "BookStore.Data",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -183,8 +244,13 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
                 "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+=======
+              "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj"
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
               }
             }
           }
@@ -247,10 +313,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -262,6 +329,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\dev\\bookstoreDay\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
+        "projectName": "BookStore.Integrated.Test",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Domain.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -274,8 +354,13 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\BookStore.Application.csproj": {
                 "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Api\\BookStore.Application.csproj"
+=======
+              "C:\\dev\\bookstoreDay\\BookStore.Api\\BookStore.Application.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Api\\BookStore.Application.csproj"
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
               }
             }
           }
@@ -328,10 +413,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -343,6 +429,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj",
+        "projectName": "BookStore.Domain",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -407,10 +506,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -422,6 +522,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dayane.peres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj",
+        "projectName": "BookStore.Service",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -434,8 +547,13 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
                 "projectPath": "C:\\Users\\dayane.peres\\Documents\\Cursos\\Book\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+=======
+              "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj"
+>>>>>>> 04b77ef2c36ee0babf0fad0627dc227163cdce70
               }
             }
           }
@@ -478,7 +596,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

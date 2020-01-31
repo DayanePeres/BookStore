@@ -9394,19 +9394,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\christian.tomyama\\.nuget\\packages\\": {}
+    "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
+      "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
       "projectName": "BookStore.Integrated.Test",
-      "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
-      "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain.Test\\obj\\",
+      "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Domain.Test\\BookStore.Integrated.Test.csproj",
+      "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Domain.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9414,14 +9414,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://packagesource": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\BookStore.Application.csproj": {
-              "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Api\\BookStore.Application.csproj"
+            "C:\\dev\\bookstoreDay\\BookStore.Api\\BookStore.Application.csproj": {
+              "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Api\\BookStore.Application.csproj"
             }
           }
         }
@@ -9474,7 +9473,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

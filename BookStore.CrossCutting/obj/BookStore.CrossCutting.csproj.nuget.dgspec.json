@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {}
+    "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
+    "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
         "projectName": "BookStore.CrossCutting",
-        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.CrossCutting\\obj\\",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +22,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj": {
-                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj"
+              "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj"
               },
-              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj": {
-                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj"
+              "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj"
               }
             }
           }
@@ -79,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj": {
+    "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj",
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj",
         "projectName": "BookStore.Data",
-        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\BookStore.Data.csproj",
-        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Data\\obj\\",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Data\\BookStore.Data.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,14 +100,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj": {
-                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj"
+              "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj"
               }
             }
           }
@@ -171,21 +169,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj": {
+    "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj",
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj",
         "projectName": "BookStore.Domain",
-        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj",
-        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\obj\\",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -193,7 +191,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -251,21 +248,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj": {
+    "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj",
+        "projectUniqueName": "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj",
         "projectName": "BookStore.Service",
-        "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\BookStore.Service.csproj",
-        "packagesPath": "C:\\Users\\christian.tomyama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Service\\obj\\",
+        "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Service\\BookStore.Service.csproj",
+        "packagesPath": "C:\\Users\\fhaidy.cavalcante\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\bookstoreDay\\BookStore.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\christian.tomyama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fhaidy.cavalcante\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -273,14 +270,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj": {
-                "projectPath": "C:\\Users\\christian.tomyama\\Desktop\\BookStore2\\BookStore.Domain\\BookStore.Domain.csproj"
+              "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\dev\\bookstoreDay\\BookStore.Domain\\BookStore.Domain.csproj"
               }
             }
           }
@@ -323,7 +319,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

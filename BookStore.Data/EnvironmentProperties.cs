@@ -2,8 +2,7 @@
 {
     public class EnvironmentProperties
     {
-        public static int SessionLifeTime = 10;
         public const string DataBaseName = "BookStore";
-        public static string ConnectionString = "Server=localhost,11433;Database=BookStore;Uid=SA;Pwd=DockerSql2017!;";
+        public static string ConnectionString = "Server=localhost,11433;Database=BookStore;Uid=sa;Pwd=DockerSql2017!;";
     }
 }

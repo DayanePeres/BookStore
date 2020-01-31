@@ -4,7 +4,7 @@ namespace BookStore.Integrated.Test.Helper
 {
     public class ConnectionString
     {
-        public static void setDev()
+        public static void SetDev()
         {
             EnvironmentProperties.ConnectionString = "";
         }

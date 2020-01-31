@@ -6,12 +6,6 @@ namespace BookStore.Data.Context
 {
     public class MyContext : DbContext
     {
-        public DbSet<AuthorEntity> authorEntities{ get; set; }
-        public DbSet<BookEntity> bookEntities { get; set; }
-        public DbSet<BookGenreEntity> bookGenreEntities { get; set; }
-        public DbSet<GenreEntity> genreEntities { get; set; }
-        public DbSet<BookAuthorEntity> bookAuthorEntities { get; set; }
-
         public MyContext(DbContextOptions<MyContext> options) 
             : base(options) { }
 

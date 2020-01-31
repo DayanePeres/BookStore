@@ -10,13 +10,12 @@ namespace BookStore.Data.Context
         {
             DbContextOptionsBuilder<MyContext> context = getOptionBuilder(string.IsNullOrEmpty(EnvironmentProperties.ConnectionString));
             return new MyContext(context.Options);
-            //
         }
 
         private DbContextOptionsBuilder<MyContext> getOptionBuilder(bool isDev)
         {
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
-            return isDev  == true ? optionsBuilder.UseInMemoryDatabase(EnvironmentProperties.DataBaseName) : optionsBuilder.UseSqlServer(EnvironmentProperties.ConnectionString);
+            return isDev ? optionsBuilder.UseInMemoryDatabase(EnvironmentProperties.DataBaseName) : optionsBuilder.UseSqlServer(EnvironmentProperties.ConnectionString);
         }
 
        

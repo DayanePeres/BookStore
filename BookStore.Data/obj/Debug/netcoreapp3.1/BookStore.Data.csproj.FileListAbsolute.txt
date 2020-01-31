@@ -24,3 +24,16 @@ C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Data\obj\Debug\netcoreap
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.csproj.CopyComplete
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.dll
 C:\Users\christian.tomyama\Desktop\BookStore2\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.pdb
+C:\dev\bookstoreDay\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.deps.json
+C:\dev\bookstoreDay\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.runtimeconfig.json
+C:\dev\bookstoreDay\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.runtimeconfig.dev.json
+C:\dev\bookstoreDay\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.dll
+C:\dev\bookstoreDay\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Data.pdb
+C:\dev\bookstoreDay\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Domain.dll
+C:\dev\bookstoreDay\BookStore.Data\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
+C:\dev\bookstoreDay\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.csprojAssemblyReference.cache
+C:\dev\bookstoreDay\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.AssemblyInfoInputs.cache
+C:\dev\bookstoreDay\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.AssemblyInfo.cs
+C:\dev\bookstoreDay\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.csproj.CopyComplete
+C:\dev\bookstoreDay\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.dll
+C:\dev\bookstoreDay\BookStore.Data\obj\Debug\netcoreapp3.1\BookStore.Data.pdb

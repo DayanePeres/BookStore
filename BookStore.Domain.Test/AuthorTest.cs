@@ -6,7 +6,10 @@ using BookStore.Service.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using BookStore.Integrated.Test.Helper;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 
 namespace BookStore.Integrated.Test
@@ -18,11 +21,11 @@ namespace BookStore.Integrated.Test
         private static AuthorRepository _repository;
         private static AuthorService _service;
         private static AuthorController _controller;
-
-        [ClassInitialize]
+        
+        [ClassInitialize] //define que será executado uma vez quando a classe for inicada.
         public static void Setup(TestContext context)
         {
-            Helper.ConnectionString.setDev();
+            ConnectionString.SetDev(); //Atalho para limpar a conection string.
             _myContext = new DataContext().CreateDbContext(new string[] { });
             _repository = new AuthorRepository(_myContext);
             _service = new AuthorService(_repository);
@@ -33,119 +36,117 @@ namespace BookStore.Integrated.Test
         [TestMethod]
         public async Task ShouldGetAnEmptyAuthorsList()
         {
-            var response = (OkObjectResult) await _controller.GetAll();
+            //Act
+            var getAllResponse = (ObjectResult) await _controller.GetAll();
+            var authorList = (IEnumerable<AuthorEntity>) getAllResponse.Value;
 
-            var value = response.Value.GetType()
-                .GetProperty("Count")
-                .GetValue(response.Value);
-
-            Assert.AreEqual(200, response.StatusCode);
-            Assert.AreEqual(0, value);
+            //Assert
+            Assert.AreEqual(200, getAllResponse.StatusCode);
+            Assert.AreEqual(0, authorList.Count());
         }
 
         [TestMethod]
         public async Task ShouldPostAuthors()
         {
-            AuthorEntity author = new AuthorEntity { 
-                Name = "JoaoDoJeitoCerto"
-            };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            //Arrange
+            var author = CreateAuthor();
 
-            var responseGet = await _controller.Get(respPost.Id);
-            var respGet = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responseGet).Result).Value);
+            //Act
+            var postResponse = (ObjectResult) await _controller.Post(author);
+            author = (AuthorEntity) postResponse.Value;
 
-            var responseGetAll = (OkObjectResult)await _controller.GetAll();
-            var respGetAll = responseGetAll.Value.GetType()
-                .GetProperty("Count")
-                .GetValue(responseGetAll.Value);
+            var getResponse = (ObjectResult) await _controller.Get(author.Id);
+            var authorResponse = (AuthorEntity) getResponse.Value;
 
+            var getAllResponse = (ObjectResult)await _controller.GetAll();
+            var authorList = (IEnumerable<AuthorEntity>) getAllResponse.Value;
 
-            Assert.AreEqual(200, (int)((OkObjectResult)responsePost).StatusCode);
-            Assert.AreEqual(200, (int)((OkObjectResult)responseGet).StatusCode);
-            Assert.AreEqual(respGet.Id,respPost.Id);
-            Assert.AreEqual(1, respGetAll);
-
+            //Assert
+            Assert.AreEqual(200, postResponse.StatusCode);
+            Assert.AreEqual(200, getResponse.StatusCode);
+            Assert.AreEqual(author.Id,authorResponse.Id);
+            Assert.AreEqual(1, authorList.Count());
         }
 
         [TestMethod]
         public async Task ShouldPutAuthorById()
         {
-            AuthorEntity author = new AuthorEntity
-            {
-                Name = "JoaoDoJeitoCerto"
-            };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            //Arrange
+            var author = CreateAuthor();
+
+            //Act
+            var postResponse = (ObjectResult) await _controller.Post(author);
+            var authorResponse = (AuthorEntity) postResponse.Value;
 
             author.Name = "JoaoAtualizado";
             
-            var responsePut = await _controller.Put(author,respPost.Id);
-            var respPut = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePut).Result).Value);
+            var putResponse = (ObjectResult) await _controller.Put(author, authorResponse.Id);
+            var respPut = (AuthorEntity) putResponse.Value;
 
-            var responseGetAll = (OkObjectResult)await _controller.GetAll();
-            var respGetAll = responseGetAll.Value.GetType()
-                .GetProperty("Count")
-                .GetValue(responseGetAll.Value);
+            var getAllResponse = (ObjectResult) await _controller.GetAll();
+            var authorList = (IEnumerable<AuthorEntity>) getAllResponse.Value;
 
-
-            Assert.AreEqual(200, (int)((OkObjectResult)responsePost).StatusCode);
-            Assert.AreEqual(200, (int)((OkObjectResult)responsePut).StatusCode);
+            //Assert
+            Assert.AreEqual(200, (int)((OkObjectResult)postResponse).StatusCode);
+            Assert.AreEqual(200, (int)((OkObjectResult)putResponse).StatusCode);
             Assert.AreEqual(respPut.Name, author.Name);
-            Assert.AreEqual(2, respGetAll);
+            Assert.AreEqual(2, authorList.Count());
 
         }
 
         [TestMethod]
         public async Task ShouldDeleteAuthorById()
         {
-            AuthorEntity author = new AuthorEntity
-            {
-                Name = "JoaoDoJeitoCerto"
-            };
-            var responsePost = await _controller.Post(author);
-            var respPost = (AuthorEntity)(((OkObjectResult)((ActionResult<AuthorEntity>)responsePost).Result).Value);
+            //Arrange
+            var author = CreateAuthor();
 
-            var responseDelete = await _controller.Delete(respPost.Id);
-            var respDelete = (bool)(((OkObjectResult)((ActionResult<AuthorEntity>)responseDelete).Result).Value);
+            //Act
+            var postResponse = (ObjectResult) await _controller.Post(author);
+            var authorResponse = (AuthorEntity) postResponse.Value;
 
-            var responseGet = await _controller.Get(respPost.Id);
+            var deleteResponse = (ObjectResult) await _controller.Delete(authorResponse.Id);
+            var isDeleted = (bool) deleteResponse.Value;
+
+            var getResponse = await _controller.Get(authorResponse.Id);
             
 
-            var responseGetAll = (OkObjectResult)await _controller.GetAll();
-            var respGetAll = responseGetAll.Value.GetType()
-                .GetProperty("Count")
-                .GetValue(responseGetAll.Value);
+            var getAllResponse = (ObjectResult) await _controller.GetAll();
+            var authorList = (IEnumerable<AuthorEntity>) getAllResponse.Value;
 
-
-            Assert.AreEqual(200, (int)((OkObjectResult)responsePost).StatusCode);
-            Assert.AreEqual(200, (int)((OkObjectResult)responseDelete).StatusCode);
-            Assert.AreEqual(200, (int)((OkObjectResult)responseGetAll).StatusCode);
-            Assert.IsTrue(respDelete);
-            Assert.IsInstanceOfType(responseGet, typeof(NotFoundResult) );
+            //Assert
+            Assert.AreEqual(200, postResponse.StatusCode);
+            Assert.AreEqual(200, deleteResponse.StatusCode);
+            Assert.AreEqual(200, getAllResponse.StatusCode);
+            Assert.IsTrue(isDeleted);
+            Assert.IsInstanceOfType(getResponse, typeof(NotFoundResult));
+            Assert.AreEqual(0, authorList.Count());
         }
         [TestMethod]
         public async Task ShouldFindAllAuthorAndDelete()
         {
+            var getAllResponse = (ObjectResult) await _controller.GetAll();
+            var authorList = (IEnumerable<AuthorEntity>) getAllResponse.Value;
 
-            var responseGetAll = (OkObjectResult)await _controller.GetAll();
-            var respGetAll = (IEnumerable<AuthorEntity>)(((OkObjectResult)((ActionResult<AuthorEntity>)responseGetAll).Result).Value);
-
-            foreach(AuthorEntity author in respGetAll)
+            foreach(AuthorEntity author in authorList)
             {
-                var responseDelete = await _controller.Delete(author.Id);
-                var respDelete = (bool)(((OkObjectResult)((ActionResult<AuthorEntity>)responseDelete).Result).Value);
-                Assert.IsTrue(respDelete);
+                var deleteResponse = (ObjectResult) await _controller.Delete(author.Id);
+                var isDeleted = (bool) deleteResponse.Value;
+                Assert.IsTrue(isDeleted);
             }
 
-            var responseGetAll2 = (OkObjectResult)await _controller.GetAll();
-            var valueGetAll = responseGetAll2.Value.GetType()
-                .GetProperty("Count")
-                .GetValue(responseGetAll2.Value);
+            getAllResponse = (ObjectResult) await _controller.GetAll();
+            authorList = (IEnumerable<AuthorEntity>) getAllResponse.Value;
 
-            Assert.AreEqual(0, valueGetAll);
-
+            Assert.AreEqual(0, authorList.Count());
         }
 
+        private AuthorEntity CreateAuthor()
+        {
+            return new AuthorEntity
+            {
+                Name = "Author JoaoDoJeitoCerto"
+            };
+
+        }
     }
 }
